@@ -33,11 +33,53 @@ body{
 .content{
     margin-top: -10px;
     background-color: cornsilk;
+    margin-bottom: 100px;/*JST FOR VIEWING*/
+    
 }
 .content > *{
     text-align: center;
     
 }
+/* DESIGNING THE PLANS SECTION */
+.plans{
+    width: 65%;
+    margin: 0 auto;
+    background: yellow;
+    padding: 20px;
+}
+.plans ul{
+    list-style-type: none;
+       
+}
+.plans ul > li{
+    float: left;
+}
+
+.plans:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.payment{
+    width: 75%;
+    /* border: 3px solid black; */
+    margin: 20px auto;
+}
+.proceed{
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    padding: 15px 8px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 10px 3px #b3b0b0;
+    cursor: pointer;
+
+}
+
 
 
 .attribution { font-size: 11px; text-align: center; }

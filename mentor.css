@@ -1,0 +1,44 @@
+body{
+    box-sizing: border-box;
+    font-size: 16px;
+    color: hsl(222, 34%, 31%);
+    background: hsl(228, 45%, 91%);
+    
+}
+.container{
+    
+    max-width: 1440px;
+    background: url(./images/pattern-background-desktop.svg), hsl(224, 59%, 89%);
+    background-size: cover;
+    margin: 0 auto;
+    border: 2px solid yellow;/*SO THE WIDTH CAN BE VISIBLE*/
+}
+.container-main{
+    margin:100px auto 0;
+    width: 50%;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.image img{
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.content{
+    margin-top: -10px;
+    background-color: cornsilk;
+}
+.content > *{
+    text-align: center;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+

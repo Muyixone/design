@@ -10,12 +10,12 @@ body{
     max-width: 1440px;
     background: url(./images/pattern-background-desktop.svg), hsl(224, 59%, 89%);
     background-size: cover;
-    margin: 0 auto;
-    border: 2px solid yellow;/*SO THE WIDTH CAN BE VISIBLE*/
+    margin: 0 auto 60px;
+    
     
 }
 .container-main{
-    margin:80px auto 0;
+    margin:50px auto 0;
     width: 50%;
     /* border: 2px solid red; */
     border-radius: 10px;
@@ -35,8 +35,7 @@ body{
     margin-top: -10px;
     background-color: cornsilk;
     overflow: hidden;
-    margin-bottom: 100px; /*JST FOR VIEWING */
-    
+        
 }
 .content > *{
     text-align: center;
@@ -90,7 +89,6 @@ a.change{
 }
 .payment{
     width: 65%;
-    /* border: 3px solid black; */
     margin: 20px auto;
 }
 .proceed, .cancel{

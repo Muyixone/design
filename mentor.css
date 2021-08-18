@@ -46,7 +46,7 @@ body{
 .plans{
     width: 55%;
     margin: 0 auto;
-    background: yellow;
+    background: hsla(228, 16%, 76%, 0.603);;
     padding: 15px;
     position: relative;
     border-radius: 10px;
@@ -56,22 +56,40 @@ body{
     display: table;
     clear: both;
 }
-.fa-music{
+.plans div{
+    border: none;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+    background-color: hsl(228, 45%, 91%);
+    text-align: center;
+    
+}
+.fas{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+.fa-music, .plans aside{
     display: inline-block;
     float: left;
     font-size: 18px;
 }
-.fa-music > span{
-    padding-left: 10px;
+
+
+.plans aside{
+    padding-left: 20px;
 }
 
 a.change{
     position: absolute;
-    bottom: 30%;
-    right: 8%;
+    bottom: 35%;
+    right: 10%;
 }
 .payment{
-    width: 75%;
+    width: 65%;
     /* border: 3px solid black; */
     margin: 20px auto;
 }

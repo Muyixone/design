@@ -12,9 +12,10 @@ body{
     background-size: cover;
     margin: 0 auto;
     border: 2px solid yellow;/*SO THE WIDTH CAN BE VISIBLE*/
+    
 }
 .container-main{
-    margin:100px auto 0;
+    margin:80px auto 0;
     width: 50%;
     /* border: 2px solid red; */
     border-radius: 10px;
@@ -33,7 +34,8 @@ body{
 .content{
     margin-top: -10px;
     background-color: cornsilk;
-    margin-bottom: 100px;/*JST FOR VIEWING*/
+    overflow: hidden;
+    margin-bottom: 100px; /*JST FOR VIEWING */
     
 }
 .content > *{
@@ -42,43 +44,69 @@ body{
 }
 /* DESIGNING THE PLANS SECTION */
 .plans{
-    width: 65%;
+    width: 55%;
     margin: 0 auto;
     background: yellow;
-    padding: 20px;
+    padding: 15px;
+    position: relative;
+    border-radius: 10px;
 }
-.plans ul{
-    list-style-type: none;
-       
-}
-.plans ul > li{
-    float: left;
-}
-
-.plans:after{
+.plans::after{
     content: "";
     display: table;
     clear: both;
+}
+.fa-music{
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+}
+.fa-music > span{
+    padding-left: 10px;
+}
+
+a.change{
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
 }
 .payment{
     width: 75%;
     /* border: 3px solid black; */
     margin: 20px auto;
 }
-.proceed{
+.proceed, .cancel{
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     margin: 0 auto 10px;
     width: 100%;
     padding: 15px 8px;
     border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.proceed{
     border-radius: 10px;
     color: #eee;
     background-color: hsl(245, 75%, 52%);
     box-shadow: 0 10px 3px #b3b0b0;
-    cursor: pointer;
-
 }
+.proceed:active{
+    background-color: hsl(245, 34%, 37%);
+}
+
+.cancel{
+    font-size: 18px;
+    color: hsl(245, 43%, 56%);
+    margin-top: 20px;
+}
+.cancel:active{
+    color:  hsl(245, 35%, 19%);
+}
+
 
 
 

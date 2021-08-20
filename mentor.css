@@ -10,7 +10,7 @@ body{
     max-width: 1440px;
     background: url(./images/pattern-background-desktop.svg), hsl(224, 59%, 89%);
     background-size: cover;
-    margin: 0 auto 60px;
+    margin: 0 auto 80px;
     
     
 }
@@ -55,6 +55,8 @@ body{
     display: table;
     clear: both;
 }
+
+/* THE MUSIC ICON'S ROUNDED CIRCLE */
 .plans div{
     border: none;
     position: relative;
@@ -89,7 +91,8 @@ a.change{
 }
 .payment{
     width: 65%;
-    margin: 20px auto;
+    margin: 20px auto; 
+    
 }
 .proceed, .cancel{
     font-size: 16px;
@@ -129,3 +132,33 @@ a.change{
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
+@media screen and (max-width: 860px) {
+    body{
+       
+        font-size: 14px;        
+    }
+    .plans{
+        width: 70%;
+        }
+}
+/* MEDIA QUERY FOR MOBILE DEVICE */
+@media screen and (max-width: 480px) {
+    body{
+       
+        font-size: 14px;        
+    }
+    .plans{
+        width: 85%;
+    }
+     
+    .plans :is(div, aside){
+        font-size: 14px;
+        display: block;
+    }
+
+    .payment :is(.proceed, .cancel){
+        width: 85%;
+        margin: 10px auto;
+        font-size: 1em;
+    }
+}
